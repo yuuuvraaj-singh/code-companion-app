@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Companion - AI Code Analysis & Translation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🤖 Code Companion</h1>
+            <p>AI-powered code analysis and language translation</p>
+        </header>
+
+        <main class="main-content">
+            <div class="tabs">
+                <button class="tab active" data-tab="analyze">📊 Analyze Code</button>
+                <button class="tab" data-tab="translate">🔄 Translate Code</button>
+            </div>
+
+            <!-- Code Analysis Tab -->
+            <div id="analyze-tab" class="tab-content active">
+                <div class="input-section">
+                    <div class="form-group">
+                        <label for="analyze-language">Programming Language:</label>
+                        <select id="analyze-language">
+                            <option value="javascript">JavaScript</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="analyze-code">Your Code:</label>
+                        <textarea id="analyze-code" placeholder="Paste your code here for analysis..."></textarea>
+                    </div>
+                    
+                    <button id="analyze-btn" class="btn">Analyze Code</button>
+                </div>
+                
+                <div id="analyze-results"></div>
+            </div>
+
+            <!-- Code Translation Tab -->
+            <div id="translate-tab" class="tab-content">
+                <div class="input-section">
+                    <div class="translation-controls">
+                        <div class="form-group">
+                            <label for="from-language">From Language:</label>
+                            <select id="from-language">
+                                <option value="javascript">JavaScript</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="to-language">To Language:</label>
+                            <select id="to-language">
+                                <option value="python">Python</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="translate-code">Your Code:</label>
+                        <textarea id="translate-code" placeholder="Paste your code here for translation..."></textarea>
+                    </div>
+                    
+                    <button id="translate-btn" class="btn">Translate Code</button>
+                </div>
+                
+                <div id="translate-results"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
